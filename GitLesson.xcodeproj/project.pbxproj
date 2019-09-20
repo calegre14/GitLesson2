@@ -12,7 +12,6 @@
 		28E9F59923356FF5008331C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E9F59723356FF5008331C9 /* Main.storyboard */; };
 		28E9F59B23356FF6008331C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E9F59A23356FF6008331C9 /* Assets.xcassets */; };
 		28E9F59E23356FF6008331C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E9F59C23356FF6008331C9 /* LaunchScreen.storyboard */; };
-		28E9F5A923356FF6008331C9 /* GitLessonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E9F5A823356FF6008331C9 /* GitLessonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +33,6 @@
 		28E9F59D23356FF6008331C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28E9F59F23356FF6008331C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28E9F5A423356FF6008331C9 /* GitLessonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitLessonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28E9F5A823356FF6008331C9 /* GitLessonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitLessonTests.swift; sourceTree = "<group>"; };
-		28E9F5AA23356FF6008331C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				28E9F59223356FF5008331C9 /* GitLesson */,
-				28E9F5A723356FF6008331C9 /* GitLessonTests */,
 				28E9F59123356FF5008331C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,15 +81,6 @@
 				28E9F59F23356FF6008331C9 /* Info.plist */,
 			);
 			path = GitLesson;
-			sourceTree = "<group>";
-		};
-		28E9F5A723356FF6008331C9 /* GitLessonTests */ = {
-			isa = PBXGroup;
-			children = (
-				28E9F5A823356FF6008331C9 /* GitLessonTests.swift */,
-				28E9F5AA23356FF6008331C9 /* Info.plist */,
-			);
-			path = GitLessonTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +193,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28E9F5A923356FF6008331C9 /* GitLessonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

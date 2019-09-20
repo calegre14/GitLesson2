@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GitLesson" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="41r-T4-nWc">
+                                <rect key="frame" x="44" y="644" width="326" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="41r-T4-nWc" secondAttribute="height" multiplier="30:16" id="IUQ-Eb-Y4v"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="No0-xX-Iot">
+                                <rect key="frame" x="41.5" y="425.5" width="331" height="45"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dF8-b9-8TK">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="42"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLp-Jc-zoV">
+                                        <rect key="frame" x="0.0" y="43" width="331" height="2"/>
+                                        <color key="backgroundColor" red="0.098044641315937042" green="0.49055951833724976" blue="0.14908337593078613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="sC3-rL-Saa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAh-tf-uPK">
+                                <rect key="frame" x="103.5" y="88" width="207" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="No0-xX-Iot" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6dX-MV-yid"/>
+                            <constraint firstAttribute="trailing" secondItem="41r-T4-nWc" secondAttribute="trailing" constant="44" id="6hR-JG-xUd"/>
+                            <constraint firstItem="No0-xX-Iot" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.05" id="HDX-Xg-CsF"/>
+                            <constraint firstItem="41r-T4-nWc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KZ5-15-OIw"/>
+                            <constraint firstItem="No0-xX-Iot" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="aJk-3i-kOe"/>
+                            <constraint firstItem="41r-T4-nWc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="44" id="dfF-us-QdV"/>
+                            <constraint firstItem="IAh-tf-uPK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="jVt-ed-UPW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="41r-T4-nWc" secondAttribute="bottom" constant="44" id="p5S-Hj-7Kv"/>
+                            <constraint firstItem="IAh-tf-uPK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="qok-Sm-uju"/>
+                            <constraint firstItem="IAh-tf-uPK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="upg-qy-tGJ"/>
+                            <constraint firstItem="No0-xX-Iot" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xGP-r0-213"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fox" width="1920" height="1080"/>
+    </resources>
 </document>
